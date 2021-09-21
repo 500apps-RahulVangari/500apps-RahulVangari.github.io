@@ -61,7 +61,8 @@ class PushlyFirebaseListener {
   );
   console.log("myBlobParts",myBlobParts);
     console.log("blob..",blob);
-        myBlobParts=convertToPlain(myBlobParts)
+        myBlobParts=myBlobParts[0].replace(/<[^>]+>/g, '')
+
    const title = obj.title;
       const options = {
         body:myBlobParts,
