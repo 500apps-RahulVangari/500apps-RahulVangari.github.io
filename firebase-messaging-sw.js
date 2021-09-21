@@ -57,6 +57,7 @@ class PushlyFirebaseListener {
       // console.log("encoded_data", encoded_data);
       var myBlobParts = ["<p>sdfgsgg<span class=\"ql-emojiblot\" data-name=\"neutral_face\">﻿<span contenteditable=\"false\"><span class=\"ap ap-neutral_face\">😐</span></span>﻿</span></p>"];
        let blob = new Blob(myBlobParts, {type: 'text/html', endings: "transparent"}
+                           myBlobParts=convertToPlain(myBlobParts)
   );
   console.log("myBlobParts",myBlobParts);
     console.log("blob..",blob);
